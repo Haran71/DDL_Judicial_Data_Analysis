@@ -2,7 +2,7 @@
 
 ### Overview
 
-This repository contains analysis done on the Judicial data set created by the Data Development Lab and contains information of almost 80 million cases.
+This repository contains analysis done on the Judicial data set created by the Data Development Lab which contains information of almost 80 million cases from the year 2010 to 2018.
 
 The project is divided into two parts: the Analysis part, where Analysis was done on the data, and various insights were derived from it, and Classification part, where classification problems were formulated, models were trained and their performance was analyzed.
 
@@ -52,7 +52,7 @@ Analysis was also done on the ratio of Female judges in each state, and it's cor
 
 1.West Bengal, Gujarat and the other states that were seen to be above or close to the national average in both No of cases and average time taken to handle cases are the places where resources are needed to help with the judicial system. These states also might be a startng to point to begin the implementation of a legal AI system to help augment the judicial process
 
-2.The infusion of female judges into the judciary seems to have a positive effect on the time taken to decide a case. While it is clearly not the only factor at play, understanding this correlation may help in improving the judicial syatem in India.
+2.The infusion of female judges into the judiciary seems to have a positive effect on the time taken to decide a case. While it is clearly not the only factor at play, understanding this correlation may help in improving the judicial syatem in India.
 
 ###### Analysis-3
 In the third analysis notebook, the correlation between the time taken to and the gender of the both the judge and the defendant is analyzed. Furtherore, the analysis also dives into both Male and Female judges, and the tinme they take to conclude cases with defendants of both gender.
@@ -72,9 +72,9 @@ In analysis notebook 4, a new feature is introduced. "Tenure" of a judge which i
 
 #### Classification section
 
-The goal of the classification section is to more or less confirm the analysis, done in the Analysis section of the project. The models are trained with the featuresthat we have used throughout the analysis section, fed into the models, and the performance of the models will inform us about whether our analysis was in the right direction or not.
+The goal of the classification section is to more or less confirm the analysis, done in the Analysis section of the project. The models are trained with the features that we have used throughout the analysis section, fed into the models, and the performance of the models will inform us about whether our analysis was in the right direction or not.
 
-The noteboooks for both the classifcation problems go in-depth into the entire pipeline from the data pre-processing to the training of the models and finally the performance analysis of each model. I recommned given them a look for a better understanding of the classification problems.
+The noteboooks for both the classification problems go in-depth into the entire pipeline from the data pre-processing to the training of the models and finally the performance analysis of each model. I recommned given them a look for a better understanding of the classification problems.
 
 ###### Classification-1
 
@@ -99,7 +99,7 @@ def decompress_pickle(file):
 ```
 
 ###### Classification-2
-In this a case, a binary classifciation problem was framed based on the tenure feature. The dataset was split into 2 classes, Experienced Judges, who were the judges that had a tenure more than the overall median of the tenure featured, and Novice judges, who were the judges with a tenure below the median.
+In this a case, a binary classificiation problem was framed based on the tenure feature. The dataset was split into 2 classes, Experienced Judges, who were the judges that had a tenure more than the overall median of the tenure featured, and Novice judges, who were the judges with a tenure below the median.
 
 Three different models were trained on the data: a SGD Classfier, a RandomForest Classifier, and a Multilayer Perceptron Classifier. The performance of all three models were pretty decent, with all of them learning from the data. The performance of the MultiLayer Perceptron slightly edged out the performance of the other 2 classifiers.
 
