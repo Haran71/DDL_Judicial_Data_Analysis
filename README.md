@@ -69,7 +69,6 @@ In analysis notebook 4, a new feature is introduced. "Tenure" of a judge which i
 
 2. The correlation between tenure and time_taken can again be seen when we observe the gender split. The tenure of Female judges can be seen to be less than that of Male judges on average, and this correlates to the time taken of Female judges greater than that of Male judges
 
-
 #### Classification section
 
 The goal of the classification section is to more or less confirm the analysis, done in the Analysis section of the project. The models are trained with the features that we have used throughout the analysis section, fed into the models, and the performance of the models will inform us about whether our analysis was in the right direction or not.
@@ -117,6 +116,13 @@ Here the model has not been compressed and therefore can simply be accessed by u
 ```python
 data = pickle.load(open(file_path, 'rb'))
 ```
+
+### Miscellaneous
+
+In the Analysis section of the project, noetbooks Analysis-1,Analysis-2 and Analysis-3, a `Judge_Act_merge.csv` is used which is not a part of the original dataset, but rather it was created by merging the `acts_sections.csv` file with the `judges_clean.csv` file using the `judge_case_merge_key.csv` file.
+
+
+In the notebooks, Analysis-4 and both the Classification notebooks, a `final.csv` file is used which is not a part of the original dataset. This file was created by using the `Judge_Act_merge.csv` file (explained above), and merging it with cases csv files, from the last 5 years (2014 - 2018). The tenure feature is then enginnered using the start date of the judge and the date of decision of the case. 
 
 
 
